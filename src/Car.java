@@ -1,5 +1,4 @@
 public class Car {
-
     private String bodyType;
     private int places;
     private double engineVolume;
