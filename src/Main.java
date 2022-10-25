@@ -3,5 +3,7 @@ public class Main {
 
         System.out.println("Домашнее задание 2.3 ООП часть 3. Наследование - Транспорт *****************************");
         System.out.println();
+
+
     }
 }
