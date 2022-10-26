@@ -17,6 +17,8 @@ public class Main {
                 "", "Р700Ся702", null);
 
         Car.printCar (car);
+        System.out.println();
+        car[3].refill();
 
         System.out.println();
         System.out.println("Список поездов :" + "\n");
@@ -29,7 +31,10 @@ public class Main {
                 1700, null, "Ленинградский вокзал", "Ленинград-Пассажирский", 8);
 
         Train.printTrain (train);
+        System.out.println();
+        train[1].refill();
 
+        System.out.println();
         System.out.println("Список автобусов :" + "\n");
 
         Bus [] bus = new Bus[3];
@@ -42,5 +47,7 @@ public class Main {
                 "",null, null);
 
         Bus.printBus (bus);
+        System.out.println();
+        bus[2].refill();
     }
 }
