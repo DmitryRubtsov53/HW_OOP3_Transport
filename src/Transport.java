@@ -1,8 +1,10 @@
+import java.time.LocalDate;
+
 public class Transport {
-    private final String brand;
-    private final String model;
-    private final int yearOfIssue;
-    private final String country;
+    private String brand;
+    private String model;
+    private int yearOfIssue;
+    private String country;
     private String color;
     private int maxSpeed;
 
@@ -22,18 +24,19 @@ public class Transport {
     }
 // setters **********************************************************************************************
     public void setColor(String color) {
-        this.color = color;
+        this.color = color != null ? color : "белый";
     }
     public void setMaxSpeed(int maxSpeed) {
-        this.maxSpeed = maxSpeed;
+        this.maxSpeed = maxSpeed != 0 ? maxSpeed : 100;
     }
 // constructor *******************************************************************************************
     public Transport(String brand, String model, int yearOfIssue, String country, String color, int maxSpeed) {
-        this.brand = brand;
-        this.model = model;
-        this.yearOfIssue = yearOfIssue;
-        this.country = country;
-        this.color = color;
-        this.maxSpeed = maxSpeed;
+        this.brand = brand != null ? brand : "default";
+        this.model = model != null ? model : "default";
+        this.yearOfIssue = yearOfIssue != 0 ? yearOfIssue : LocalDate.now().getYear();
+        this.country = country != null ? country : "Россия";
+
+        setColor(color);
+        setMaxSpeed(maxSpeed);
     }
-}
+} // class *********************************************************************************************
