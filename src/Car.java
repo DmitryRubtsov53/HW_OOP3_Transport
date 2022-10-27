@@ -7,7 +7,6 @@ public class Car extends Transport {
     private String regNumber;
     private String tiresType;
 // getters **********************************************************************************************
-
     public String getBodyType() { return bodyType;
     }
     public int getPlaces() { return places;

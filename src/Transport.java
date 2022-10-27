@@ -12,7 +12,6 @@ public abstract class Transport {
     public abstract void refill();
 
  // getters **********************************************************************************************
-
     public String getBrand() { return brand;
     }
     public String getModel() { return model;

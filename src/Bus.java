@@ -56,7 +56,6 @@ public class Bus extends Transport {
             System.out.println(el);
         }
     }
-
     @Override
     public void refill() {
         System.out.println("Автобус можно заправлять бензином или дизелем на заправке.");
